@@ -1,0 +1,152 @@
+.wrapper {
+  display: grid;
+  row-gap: 20px;
+  border: 1px solid red;
+  position: relative;
+  justify-items: center;
+  padding-bottom: 50px;
+  padding: 10px 100px 45px 100px;
+}
+
+.tasks {
+  border: 1px solid red;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  padding: 15px;
+  max-width: 280px;
+  border-radius:10px;
+}
+.tasks__title {
+  margin: 20px 0 20px 0;
+  position: relative;
+  text-align: center;
+  text-transform: uppercase;
+}
+.tasks__list {
+  margin: 0;
+  padding: 0;
+  width: 250px;
+  list-style: none;
+}
+.tasks__item {
+  transition: background-color 0.5s;
+  margin-bottom: 10px;
+  padding: 5px;
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  border: 2px dashed #b2d9d0;
+  border-radius: 10px;
+  cursor: move;
+  background-color: #dff2ef;
+  max-width: 250px;
+  transition: background-color 0.5s;
+
+  word-break: break-all;
+}
+.tasks__item > div > img {
+  max-width: 25px;
+  max-height: 25px;
+}
+.tasks__item:last-child {
+  margin-bottom: 0;
+}
+.selected {
+  opacity: 0.6;
+}
+.btnCreate {
+  position: absolute;
+  bottom: 0;
+  right: 48%;
+  font-size: 30px;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  background-color: white;
+  border: none;
+  transition: all 0.3s ease-in;
+}
+.btnCreate:hover {
+  animation: myAnim 2s ease 0s 1 normal forwards;
+  background-color: rgb(152, 245, 152);
+  color: rgb(243, 239, 0);
+}
+@keyframes myAnim {
+  0% {
+    transform: scale3d(1, 1, 1);
+  }
+
+  30% {
+    transform: scale3d(1.25, 0.75, 1);
+  }
+
+  40% {
+    transform: scale3d(0.75, 1.25, 1);
+  }
+
+  50% {
+    transform: scale3d(1.15, 0.85, 1);
+  }
+
+  65% {
+    transform: scale3d(0.95, 1.05, 1);
+  }
+
+  75% {
+    transform: scale3d(1.05, 0.95, 1);
+  }
+
+  100% {
+    transform: scale3d(1, 1, 1);
+  }
+}
+.btnDelete {
+  position: absolute;
+  color: red;
+  border: none;
+  font-size: 30px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  top: 10px;
+  right: 10px;
+  display: flex;
+  justify-content: center;
+  transition: all 0.5s ease-in-out;
+}
+.btnDelete:hover {
+  background-color: red;
+  color: black;
+  animation: flip-scale-up-hor 0.5s linear forwards;
+}
+@keyframes flip-scale-up-hor {
+  0% {
+    transform: scale(1) rotateX(0);
+  }
+  50% {
+    transform: scale(2) rotateX(-90deg);
+  }
+  100% {
+    transform: scale(1) rotateX(-180deg);
+  }
+}
+.btnRemoveParent {
+  animation: scale-up-center 0.4s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+}
+@keyframes scale-up-center {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(0);
+  }
+}
+.divGif {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  width: 50px;
+}

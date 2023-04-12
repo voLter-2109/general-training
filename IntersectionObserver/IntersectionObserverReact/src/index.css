@@ -1,0 +1,36 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.photo {
+  width: 80%;
+  padding-top: 30px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.photo-card {
+  width: 300px;
+  margin-bottom: 20px;
+  border: 1px solid rgba(0, 0, 0, 0.24);
+  border-radius: 5px;
+  overflow: hidden;
+  text-align: center;
+}
+.photo-card > img {
+  width: 100%;
+  height: 500px;
+  object-fit: contain;
+}
+.photo-card_active {
+  border: 1px solid red;
+}
+
+.photo-card_sceleton {
+  width: 100%;
+  height: 500px;
+  background-color: rgba(0, 0, 0, 0.2);
+}

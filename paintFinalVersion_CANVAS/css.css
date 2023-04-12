@@ -1,0 +1,67 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  /* height: 100vh; */
+  display: flex;
+  /* justify-content: center;
+  align-items:center; */
+  
+}
+
+#wrapper {
+  height: fit-content;
+  display: flex;
+  flex-direction: row;
+}
+
+#elemet {
+  min-height: 100%;
+  padding: 20px;
+  border: 3px solid red;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  user-select: none;
+}
+
+.textPushText {
+font-weight: bold;
+text-decoration: underline red 5px;
+/* text-decoration-color: red; */
+
+}
+
+.func > button {
+  padding: 5px 10px;
+  margin-top: 10px;
+  margin-right: 10px;
+}
+
+.widthLine > input {
+  margin-top: 10px;
+}
+
+.color > div {
+  display: inline-block;
+  padding: 25px;
+  border-radius: 100%;
+  margin-right: 15px;
+  margin-top: 15px;
+}
+
+.black {
+  background-color: black;
+}
+.red {
+  background-color: red;
+}
+.green {
+  background-color: green;
+}
+.border {
+  border: 4px solid peru;
+}

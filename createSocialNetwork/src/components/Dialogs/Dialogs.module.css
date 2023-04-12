@@ -1,0 +1,94 @@
+.container {
+  display: grid;
+  grid-template-areas: "dialogs dialog";
+  grid-template-columns: 15% 1fr;
+  height: 100%;
+  gap: 20px;
+  position: relative;
+}
+
+.newmessage {
+  position: absolute;
+  bottom: -11px;
+  left: -11px;
+  border-radius: 10px;
+  width: calc(100% + 20px);
+  height: 100px;
+  border: 1px solid red;
+}
+.newmessage textarea {
+  position: relative;
+  resize: none;
+  width: calc(100% - 22px);
+  height: calc(100% - 21px);
+  border-radius: 10px;
+  padding: 10px;
+  background-color: rgb(211, 209, 209);
+}
+.newmessage button {
+  position: absolute;
+  right: 60px;
+  top: 25px;
+  height: 50px;
+  width: 150px;
+  border-radius: 10px;
+  color: black;
+}
+
+.dialogs {
+  grid-area: dialogs;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.dialogs div:not(:first-child) {
+  margin-bottom: 15px;
+  border: 1px solid red;
+  padding: 10px 5px;
+  border-radius: 10px;
+}
+
+.activeClass {
+  color: black;
+  background-color: rgb(197, 118, 118);
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+.dialog {
+  grid-area: dialog;
+  padding: 0 30px;
+}
+.dialog div {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.dialog div p {
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 5px 20px;
+  background-color: rgb(193, 130, 130);
+  position: relative;
+  border-radius: 10px 10px 10px 0;
+  margin-bottom: 15px;
+}
+.dialog div p:after {
+  position: absolute;
+  content: "";
+  bottom: 0;
+  right: 100%;
+  background-color: rgb(193, 130, 130);
+  height: 10px;
+  width: 10px;
+  -webkit-clip-path: path("M10,10H0V0H0A10,10,0,0,0,10,10Z");
+          clip-path: path("M10,10H0V0H0A10,10,0,0,0,10,10Z");
+  transform: scale(-1, 1);
+}
+.dialog img {
+  width: 40px;
+  height: 40px;
+  border: 1px solid black;
+  border-radius: 50%;
+  margin-right: 10px;
+}/*# sourceMappingURL=Dialogs.module.css.map */

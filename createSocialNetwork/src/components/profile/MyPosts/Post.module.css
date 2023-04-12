@@ -1,0 +1,9 @@
+.message {
+  width: -moz-fit-content;
+  width: fit-content;
+  max-width: 200px;
+  padding: 2px 10px;
+  border: 1px solid red;
+  border-radius: 5px;
+  margin-bottom: 5px;
+}/*# sourceMappingURL=Post.module.css.map */

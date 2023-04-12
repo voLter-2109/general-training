@@ -1,0 +1,35 @@
+.nav {
+  grid-area: nav;
+  border: 1px solid black;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding: 10px;
+  background-color: rgb(196, 194, 194);
+}
+.nav a {
+  list-style-type: none;
+  margin-bottom: 15px;
+  border: 1px solid red;
+  padding: 10px 5px;
+  border-radius: 10px;
+}
+.nav a:last-of-type {
+  margin-bottom: 100px;
+}
+.nav h1 {
+  margin-bottom: 20px;
+}
+.nav > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+.nav > div img {
+  width: 50px;
+  height: 50px;
+  border: 1px solid black;
+  border-radius: 50%;
+}/*# sourceMappingURL=NavBar.module.css.map */

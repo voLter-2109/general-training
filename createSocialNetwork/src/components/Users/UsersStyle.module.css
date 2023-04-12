@@ -1,0 +1,13 @@
+.selectPage {
+  padding: 10px 15px;
+}
+.selectPage span {
+  margin-right: 10px;
+  cursor: pointer;
+}
+.selectPage span.active {
+  font-weight: bold;
+  border: 1px solid red;
+  border-radius: 50%;
+  padding: 5px;
+}/*# sourceMappingURL=UsersStyle.module.css.map */
